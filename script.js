@@ -1,12 +1,12 @@
-const modalidades = ["Ginástica", "Judô", "Surfe", "Vôlei"];
+const modalidades = [ "Vôlei"];
 
 //Com base na constante modalidade, 
 //Coloque o número que represente o esporte do seu grupo
 const escolha = 3;
 
 document.querySelector('body').style.backgroundImage = "url('img/"+modalidades[escolha]+".png')";
-document.querySelector('title').textContent = "Missão Olímpica | "+modalidades[escolha];
-document.querySelector('h1').innerHTML = "Missão Olímpica <br> "+modalidades[escolha];
+document.querySelector('title').textContent = "Minecraft | "+modalidades[escolha];
+document.querySelector('h1').innerHTML = "Minecraft <br> "+modalidades[escolha];
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
