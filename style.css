@@ -1,56 +1,51 @@
-:root {
-    --cor-fundo: #ff7b7b;
-    --cor-principal: #ffd000;
-    --cor-secundaria: #00ff22;
-    --cor-destaque: #00ffff;
-    --cor-texto: #8400ff;
+@import url('https://fonts.cdnfonts.com/css/riverdale');
+
+:root{
+    --cor-principal: #00000065 ;
+    --cor-secundaria: #437c0e; 
+    --cor-destaque: #ffffff;
+    --cor-texto: #ffffff;
+
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: no-repeat left center;
-    background-color: var(--cor-fundo);
+    background-image: url(mine.jpg);
+    background-size: cover;
+    background-position: center; 
     color: var(--cor-texto);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Garante que a altura mínima seja a altura total da viewport */
+    min-height: 100vh;
+    font-family : 'Harry Potter' , sans-serif ;
 }
 
-.caixa-principal {
+.caixa-principal{
     background-color: var(--cor-principal);
-    opacity : 0.8;
-    width: 90%; /* Ajuste a largura conforme necessário */
-    max-width: 600px; /* Ajuste a largura máxima conforme necessário */
+    font-size: 25px;
+    width: 90%;
+    max-width: 600px;
     text-align: center;
     padding: 20px;
-    box-sizing: border-box;
-    position: relative; /* Garante que o conteúdo fique sobre a imagem */
-    z-index: 1; /* Garante que o conteúdo fique sobre a imagem */
-    background-size: 150px;
-    margin-top: -150px;
 }
 
-.caixa-alternativas{
-    margin-top: 10px;
-}
-
-h1 {
+h1{
     color: var(--cor-destaque);
 }
 
 button {
     background-color: var(--cor-secundaria);
     color: var(--cor-texto);
+    font-size: 20px;
+    font-family : 'Harry Potter' , sans-serif ;
     border: none;
     border-radius: 15px;
     padding: 15px;
-    margin: 10px;
     transition: background-color 0.3s;
+    margin: 5px;
 }
 
-button:hover {
+button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }
